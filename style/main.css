@@ -1,0 +1,106 @@
+:root{
+    --azul: #000020;
+    --preta: #ffff00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elemetos base*/
+body{
+    background: var(--azul);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+header .logo{
+    margin-left: 5px;
+    color: var(--preta);
+    font-family: "Arial Black";
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:dodgerblue ;
+    margin-right: 10px;
+}
+
+/*Isso faz com oq quando o cursor passar em cima da palavra ela troque de cor*/
+header nav a:hover{    
+    color:aliceblue;
+}
+
+/*Times Principal*/
+.time-real{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../img/real-madrid.png');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.time-real .descrição{
+    margin-top:  10px;
+    margin-bottom: 40px;
+}
+
+.CHANPIONS{
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ 
+.botão{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botão:hover{
+    background-color: whitw;
+    color: black;
+}
+
+.botão i{
+    margin-right: 7px;
+}
+
+.Container{
+    margin-left: 20px;
+}
+
+.time-real .Container{
+    width: 70%;
+}
+
+.box-times{
+   height: 100%;
+   width: 100%;
+    display: block;
+}
+
+.carousel-times{
+    margin-top: 5px;
+}
